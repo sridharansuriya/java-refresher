@@ -1,3 +1,4 @@
+package com.bodhi;
 @FunctionalInterface  //This is not needed. But with this the compiler will check the interface has one and only one method
 interface Functional {
 	void show();

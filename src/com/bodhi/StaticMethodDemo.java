@@ -1,3 +1,4 @@
+package com.bodhi;
 interface Static {
 	static void abc() {
 		System.out.println("In abc");

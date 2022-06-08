@@ -1,3 +1,4 @@
+package com.bodhi;
 abstract class Writer {
 	public void write(String input) {
 		System.out.println("Writing text: " + input);

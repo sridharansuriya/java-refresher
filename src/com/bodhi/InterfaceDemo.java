@@ -1,3 +1,4 @@
+package com.bodhi;
 interface WriterInterface {
 	void write();
 }

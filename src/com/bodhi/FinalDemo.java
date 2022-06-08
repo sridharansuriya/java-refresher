@@ -1,3 +1,4 @@
+package com.bodhi;
 class A {
 	public final int DAY=0; 
 	public final int WEEK;
