@@ -14,13 +14,17 @@ public class ThreadDemo {
 				try {	Thread.sleep(500);} catch (InterruptedException e) {e.printStackTrace();}
 			}
 		});
+		t1.setPriority(Thread.MIN_PRIORITY);
+		t2.setPriority(Thread.MAX_PRIORITY);
 		t1.start();
 		// introducing a minor delay to maintain sequence.
-		try {	Thread.sleep(10);} catch (InterruptedException e) {e.printStackTrace();}
+//		try {	Thread.sleep(10);} catch (InterruptedException e) {e.printStackTrace();}
 		t2.start();
 
 		t1.join();
 		t2.join();
+		
+		System.out.println(t1.isAlive());
 
 		System.out.println("Bye");
 	}
